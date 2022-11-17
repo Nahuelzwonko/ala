@@ -88,6 +88,10 @@ a {
   margin-left: 30%;
   text-align: left;
 }
+.line img{
+width: 100px;
+height: 100px;
+}
 
 .main a {
   background-color: #c7beb2 !important;
@@ -135,9 +139,27 @@ button {
 .third button {
   margin-left: 30%;
 }
-
+.fourth{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 2px;
+  width: 100%;
+  }
+@media (max-width:467px) {
+  .fourth{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 2px;
+    width: 100%;
+    }
+}
 .third .line,
 .fourth .line {
+  
   border-left: 3px solid #a59f94;
   margin-left: 0 !important;
 }
@@ -187,11 +209,18 @@ button {
 	height: 500px;
 	width: 100%;
 }
+.sel{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 19px;
+}
 select{
-  width: 100px;
+  text-align: center;
+  width: 170px;
   height: 30px;
-  margin-bottom: 20px;
+  border-radius: 7px;
   background-color: #a59f94;
   border: none;
   color: white;
+  font-size: 30px;
 }
