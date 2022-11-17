@@ -102,7 +102,9 @@ a {
 img {
   width: 100%;
 }
-
+.row{
+  margin: 0;
+}
 .second.row {
   margin-left: 0px !important;
   margin-right: 0px !important;
@@ -186,6 +188,10 @@ button {
 	width: 100%;
 }
 select{
+  width: 100px;
+  height: 30px;
   margin-bottom: 20px;
-  margin-left: 20px;
+  background-color: #a59f94;
+  border: none;
+  color: white;
 }
