@@ -181,3 +181,11 @@ button {
 .whatsapp-icon {
   margin-top:13px;
 }
+#map {
+	height: 500px;
+	width: 100%;
+}
+select{
+  margin-bottom: 20px;
+  margin-left: 20px;
+}

@@ -17,10 +17,15 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+
 </head>
 
 <body>
-	<a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp" target="_blank"> <i class="fa fa-whatsapp whatsapp-icon"></i></a>
+  <a href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
+    target="_blank"> <i class="bi bi-whatsapp whatsapp-icon"></i></a>
   <!-- navegador -->
   <nav class="navbar navbar-expand-lg navbar-light  ">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10"
@@ -202,7 +207,15 @@
       </div>
     </div>
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6  container">
-      <img src="images/map.png">
+      <select name="select-location" id="select-location">
+        <option value="-1">Seleccione un lugar</option>
+        <option value="-33.02287906020702, -68.87397289947027">Aladdin departamentos</option>
+        <option value="-33.02287906020702, -68.87397289947027">Bodega</option>
+        <option value="-33.02287906020702, -68.87397289947027">Bodega</option>
+        <option value="-33.02287906020702, -68.87397289947027">Bodega</option>
+        <option value="-33.02287906020702, -68.87397289947027">Bodega</option>
+    </select>
+      <div id="map"></div>
     </div>
   </div>
   <!-- fin de contactos -->
@@ -211,12 +224,18 @@
     <div class="footer-1">
       <p>
         Desarrollado por
-        <a href="https://www.codehuit.com/" class="a-1" >CODE</a>
+        <a href="https://www.codehuit.com/" class="a-1">CODE</a>
         <a href="https://www.codehuit.com/" class="a-2">HUIT</a>
-    </p>
+      </p>
     </div>
   </footer>
-<!-- fin de footer -->
+  <!-- fin de footer -->
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+    <script src="Leaflet-MiniMap-master/dist/Control.MiniMap.min.js"></script>    
+    <script src="layers/barrios.js"></script>
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
