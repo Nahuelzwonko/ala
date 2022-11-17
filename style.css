@@ -11,9 +11,11 @@ a {
   color: white !important;
   font-size: 16px;
 }
-#trucazo{
+
+#trucazo {
   opacity: 0;
 }
+
 .header {
   width: 90% !important;
   margin-left: 5% !important;
@@ -69,7 +71,8 @@ a {
   top: 70% !important;
   margin-right: 20%;
 }
-textarea{
+
+textarea {
   width: 100px;
   height: auto;
 }
@@ -100,8 +103,9 @@ textarea{
   width: 200px;
   height: 200px;
 }
+
 @media (max-width:467px) {
-  .line img{
+  .line img {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -110,6 +114,7 @@ textarea{
     z-index: 20;
   }
 }
+
 .main a {
   background-color: #c7beb2 !important;
   width: 30%;
@@ -248,12 +253,14 @@ select {
   color: white;
   font-size: 30px;
 }
-.form-group{
+
+.form-group {
   display: flex;
   justify-content: center;
   text-align: center;
 }
-.erra{
+
+.erra {
   display: flex;
   justify-content: center;
 
