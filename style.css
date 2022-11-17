@@ -11,7 +11,9 @@ a {
   color: white !important;
   font-size: 16px;
 }
-
+#trucazo{
+  opacity: 0;
+}
 .header {
   width: 90% !important;
   margin-left: 5% !important;
@@ -67,7 +69,10 @@ a {
   top: 70% !important;
   margin-right: 20%;
 }
-
+textarea{
+  width: 100px;
+  height: auto;
+}
 
 .carousel-caption {
   position: absolute;
@@ -242,4 +247,14 @@ select {
   border: none;
   color: white;
   font-size: 30px;
+}
+.form-group{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.erra{
+  display: flex;
+  justify-content: center;
+
 }
