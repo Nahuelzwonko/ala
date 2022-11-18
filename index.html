@@ -1,294 +1,370 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Departamentos aladdin</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="./images/genio-blanco.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+      integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+  </head>
 
-<head>
-  <title>Departamentos aladdin</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="./images/genio-blanco.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
-    integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-    crossorigin="" />
+  <body>
+    <a
+      style="z-index: 23 !important; background-color: transparent"
+      href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche"
+      class="whatsapp"
+      target="_blank"
+    >
+      <i class=""
+        ><img src="https://img.icons8.com/color/48/null/whatsapp--v1.png" /></i
+    ></a>
+    <!-- navegador -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarsExample10"
+        aria-controls="navbarsExample10"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-</head>
-
-<body>
-  <a style="z-index: 23!important; background-color: transparent;"
-    href="https://wa.me/5211234567890?text=Me%20gustaría%20saber%20el%20precio%20del%20coche" class="whatsapp"
-    target="_blank"> <i class=""><img src="https://img.icons8.com/color/48/null/whatsapp--v1.png" /></i></a>
-  <!-- navegador -->
-  <nav class="navbar navbar-expand-lg navbar-light  ">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample10"
-      aria-controls="navbarsExample10" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
-      <ul class="navbar-nav ">
-        <li class="nav-item active">
-          <a class="nav-link">Departamentos Aladdin</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#sobre">Inicio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#galeria">Galeria</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled" href="#contacto">Contactanos</a>
-        </li>
-      </ul>
+      <div
+        class="collapse navbar-collapse justify-content-md-center"
+        id="navbarsExample10"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link">Departamentos Aladdin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#sobre">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#galeria">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#contacto">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- fin del navegador -->
+    <!-- Header 1 -->
+    <div class="main">
+      <div id="sliding" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators"></ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/png/inicio.png" />
+            <div class="carousel-caption">
+              <div class="line">
+                <img src="./images/logo/logo1.png" alt="" />
+                <h3>¡CONOCENOS!</h3>
+                <p>Conoce sobre nosotros, nuestros departamentos y lo que Aladdin tiene para ofrecerte!</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/png/SILLONES.png" />
+            <div class="carousel-caption">
+              <div class="line">
+                <img src="./images/logo/logo1.png" alt="" />
+                <h3>¡CONTACTANOS!</h3>
+                <p>Realizanos cualquier consulta e informacion que quieras saber!</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/png/mesa2.png" />
+            <div class="carousel-caption">
+              <div class="line">
+                <img src="./images/logo/logo1.png" alt="" />
+                <h3>CONFORT.</h3>
+                <p>Te ofrcemos calidad en seguridad y comodidad para disfrutar en pareja o familia.</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="images/png/mesa.png" />
+            <div class="carousel-caption">
+              <div class="line">
+                <img src="./images/logo/logo1.png" alt="" />
+                <h3>UBICACION.</h3>
+                <p>Aladdin esta ubicado a 3km de Chacras de Coria, polo gastronómico de mendoza.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#sliding" data-slide="prev">
+          <span><i class="fas fa-arrow-left"></i> </span>
+        </a>
+        <a class="carousel-control-next" href="#sliding" data-slide="next">
+          <span><i class="fas fa-arrow-right"></i></span>
+        </a>
+      </div>
     </div>
-  </nav>
-  <!-- fin del navegador -->
-  <!-- Header 1 -->
-  <div class="main">
-    <div id="sliding" class="carousel slide" data-ride="carousel">
-      <ul class="carousel-indicators">
-      </ul>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="images/png/inicio.png">
-          <div class="carousel-caption">
-            <div class="line">
-              <img src="./images/logo/logo1.png" alt="">
-              <h3>Description</h3>
-              <p>texto</p>
-
-            </div>
+    <div class="second row">
+      <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+        <img src="images/png/Frame4.png" />
+      </div>
+      <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+        <br />
+        <br />
+        <h2 class="text-center" id="sobre">Sobre nosotros</h2>
+        <p>
+          <i
+            >Somo una familia que comenzo este proyecto con el fin de hacer algo
+            que amamos, de brindar alojamiento comodo y seguro, pero mas alla de
+            eso, que se sientan como en casa. De poder brindar a cada persona
+            que nos visite una hermosa experiencia en nuestra ciudad nutrida de
+            cultura, gastronomia, hermosos paisajes y variedad de actividades para realizar!.
+          </i>
+        </p>
+        <div class="text row">
+          <br />
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p>
+              ALADDIN Cuenta con 3 departamentos, un Loft en planta alta,
+              incluye living comedor con un amplio sillón, barra de cocina,
+              cocina bien equipada, heladera, baño completo, 2 habitaciones una
+              con cama grande doble y la segunda habitación con dos camas
+              individuales (ambas habitaciones cuentan con placard y tienen
+              vista a la bodega Lagarde).
+            </p>
           </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/png/SILLONES.png">
-          <div class="carousel-caption">
-            <div class="line">
-              <img src="./images/logo/logo1.png" alt="">
-              <h3>Description</h3>
-              <p>texto</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/png/mesa2.png">
-          <div class="carousel-caption">
-            <div class="line">
-              <img src="./images/logo/logo1.png" alt="">
-              <h3>Description</h3>
-              <p>texto</p>
-
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="images/png/mesa.png">
-          <div class="carousel-caption">
-            <div class="line">
-              <img src="./images/logo/logo1.png" alt="">
-              <h3>Description</h3>
-              <p>texto</p>
-
+          <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+            <p>
+              Los dos departamentos ubicados en planta baja, cuenta con patio,
+              vista a la montaña, zona de estar, TV de pantalla plana, cocina
+              totalmente equipada con heladera y baño privado con bidet, cuentan
+              con 2 habitaciones una habitación con una cama grande doble con
+              placard grande y la segunda habitación con dos camas individuales
+              con placard incluido.
+            </p>
+            <div class="erra">
+              <button type="button" class="btn active text-center">
+                Mas info
+              </button>
             </div>
           </div>
         </div>
       </div>
-      <a class="carousel-control-prev" href="#sliding" data-slide="prev">
-        <span><i class="fas fa-arrow-left"></i> </span>
-      </a>
-      <a class="carousel-control-next" href="#sliding" data-slide="next">
-        <span><i class="fas fa-arrow-right"></i></span>
-      </a>
     </div>
-  </div>
-  <div class="second row">
-    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-      <img src="images/png/Frame4.png">
-    </div>
-    <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-      <br>
-      <br>
-      <h2 class="text-center" id="sobre">Sobre nosotros</h2>
-      <p><i>It is a long established fact that a reader will be distracted by the readable content of a page when
-          looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters.
-        </i></p>
-      <div class="text row">
-        <br>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <p>- ALADDIN Cuenta con 3 departamentos, un Loft en planta alta, incluye living comedor
-            con un amplio sillón, barra de cocina, cocina bien equipada, heladera, baño completo,
-            2 habitaciones una con cama grande doble y la segunda habitación con dos camas
-            individuales (ambas habitaciones cuentan con placard y tienen vista a la bodega
-            Lagarde).</p>
+    <!-- fin de header 1 -->
+    <br />
+    <br />
+    <br />
+    <!-- Galeria -->
+    <div class="text container" id="galeria">
+      <div class="row text-center">
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+          <h3>Galeria</h3>
+          <p>
+            ALADDIN ofrece alojamientos totalmente equipados, camas y baños
+            completos con todo el blanco. Cocina completa y parrilla para
+            asados. Entrada al estacionamiento con portón automático. A solo 3
+            Kilómetros de Chacras de Coria, polo gastronómico de Mendoza y a 2
+            kilómetros del museo Fader, con una privilegiada ubicación para la
+            salida de la montaña.
+          </p>
+          <img src="images/png/galeria.png" />
         </div>
-        <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <p> Los dos departamentos ubicados en planta baja, cuenta con patio, vista a la montaña,
-            zona de estar, TV de pantalla plana, cocina totalmente equipada con heladera y baño
-            privado con bidet, cuentan con 2 habitaciones una habitación con una cama grande
-            doble con placard grande y la segunda habitación con dos camas individuales con
-            placard incluido.</p>
-          <div class="erra">
-            <button type="button" class="btn active text-center">Mas info</button>
+        <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
+          <div class="row">
+            <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
+              <img src="images/png/galeria/COCINA MAPAMUNDI.png" />
+            </div>
+            <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
+              <img src="images/png/galeria/INTERIOR COMEDOR.png" />
+            </div>
           </div>
+          <br />
+          <div class="row">
+            <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
+              <img src="images/png/galeria/PATIO.png" />
+            </div>
+            <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
+              <img src="images/png/galeria/PORTON.png" />
+            </div>
+          </div>
+          <br />
+          <button type="button" class="btn active">Mas info</button>
         </div>
       </div>
     </div>
-  </div>
-  <!-- fin de header 1 -->
-  <br>
-  <br>
-  <br>
-  <!-- Galeria -->
-  <div class="text container" id="galeria">
-    <div class="row text-center">
-      <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <h3>Galeria</h3>
-        <p>ALADDIN ofrece alojamientos totalmente equipados, camas y baños completos con
-          todo el blanco. Cocina completa y parrilla para asados. Entrada al estacionamiento
-          con portón automático. A solo 3 Kilómetros de Chacras de Coria, polo gastronómico de
-          Mendoza y a 2 kilómetros del museo Fader, con una privilegiada ubicación para la
-          salida de la montaña.</p>
-        <img src="images/png/galeria.png">
+    <!-- fin de galeria -->
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <!-- Info -->
+    <div class="third row container">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <img src="images/png/gia.png" />
       </div>
-      <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
-        <div class="row">
-          <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
-            <img src="images/png/galeria/COCINA MAPAMUNDI.png">
-          </div>
-          <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
-            <img src="images/png/galeria/INTERIOR COMEDOR.png">
-          </div>
-        </div>
-        <br>
-        <div class="row">
-          <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
-            <img src="images/png/galeria/PATIO.png">
-          </div>
-          <div class="col-6 col-sm-12 col-md-6 col-lg-6 col-xl-6 container">
-            <img src="images/png/galeria/PORTON.png">
-          </div>
-        </div>
-        <br>
-        <button type="button" class="btn active">Mas info</button>
-      </div>
-    </div>
-  </div>
-  <!-- fin de galeria -->
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <br>
-  <!-- Info -->
-  <div class="third row container">
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <img src="images/png/gia.png">
-    </div>
-    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <h1 class="text-center">Guìa turìstica</h1>
-      <div class="line">
-        <p>Disfruta de nuestra cultura vitivinícola, aprovechando nuestras viñas y conociendo
-          hermosas bodegas ubicadas en Mendoza. Con una excelente gastronomía degustando
-          esquicitos platos en varios pasos acompañado de diferentes varietales que van de la
-          mano con cada comida, una experiencia para no perderse. En Aladdin podes disfrutar
-          de la comodidad de dormir en un ambiente amplio y tranquilo con la comodidad de
-          tener cerca el mundo vitivinícola y muchas más opciones para conocer y compartir con
-          amigos o familia. </p>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <h1 class="text-center">Guía turística</h1>
+        <div class="line">
+          <p>
+            Disfruta de nuestra cultura vitivinícola, aprovechando nuestras
+            viñas y conociendo hermosas bodegas ubicadas en Mendoza. Con una
+            excelente gastronomía degustando esquicitos platos en varios pasos
+            acompañado de diferentes varietales que van de la mano con cada
+            comida, una experiencia para no perderse. En Aladdin podes disfrutar
+            de la comodidad de dormir en un ambiente amplio y tranquilo con la
+            comodidad de tener cerca el mundo vitivinícola y muchas más opciones
+            para conocer y compartir con amigos o familia.
+          </p>
           <p>Para ello, Aladdin recomienda algunas bodegas para visitar!</p>
-      </div>
-      <div class="erra">
-        <button type="button" class="btn active">Contactanos</button>
-      </div>
-
-    </div>
-  </div>
-  <br>
-  <br>
-  <br>
-
-  <!-- info -->
-
-  <!-- contactos -->
-  <div class="fourth container" id="contacto">
-    <div>
-      <h1 class="text-center">Contactanos</h1>
-      <div class="line">
-        <form action="" id="form">
-          <div class="form-group">
-            <label for="name"></label>
-            <input name="name" required type="text" id="name" placeholder="Nombre">
-          </div>
-          <div class="form-group">
-            <label for="email"></label>
-            <input name="email" type="text" id="email" required placeholder="Email">
-          </div>
-          <div class="form-group">
-            <label for="message"></label>
-            <textarea name="message" class="form-control" rows="4" id="message" placeholder="Su mensaje"></textarea>
-          </div>
-          <div class="erra">
-            <button type="submit" class="btn ">Enviar</button>
-          </div>
-
-
-          <a href="mailto:nahuelsalinas2086@gmail.com" id="trucazo"></a>
-        </form>
+        </div>
+        <div class="erra">
+          <button type="button" class="btn active">Contactanos</button>
+        </div>
       </div>
     </div>
-    <div>
-      <div class="sel">
-        <select name="select-location" id="select-location">
-          <option value="-1">Puntos turisticos</option>
-          <option value="-33.02287906020702, -68.87397289947027">Aladdin Departamentos</option>
-          <option value="-33.023092671206356, -68.87259911165964">Bodega Lagarte</option>
-          <option value="-33.05274913905099, -68.87757794121713">Bodega dante robino</option>
-          <option value="-33.066619150059516, -68.89642608395383">Bodega forja lorca</option>
-          <option value="-33.087863293138504, -68.88760872006074">Bodega norton</option>
-        </select>
-      </div>
-      <div id="map"></div>
-    </div>
-  </div>
-  <!-- fin de contactos -->
-  <!-- footer -->
-  <footer class="footer">
-    <div class="footer-1">
-      <p>
-        Desarrollado por
-        <a href="https://www.codehuit.com/" class="a-1">CODE</a>
-        <a href="https://www.codehuit.com/" class="a-2">HUIT</a>
-      </p>
-    </div>
-  </footer>
-  <!-- fin de footer -->
-  <script>
-    const $form = document.querySelector('#form');
-    const $buttonMailto = document.querySelector('#trucazo');
-    $form.addEventListener('submit', handleSubmit)
-    function handleSubmit(event) {
-      event.preventDefault();
-      const form = new FormData(this)
-      /*  console.log(form.get('name')) */
-      $buttonMailto.setAttribute('href', `mailto:nahuelsalinas2086@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
-      $buttonMailto.click()
-    }
-  </script>
-  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-    crossorigin=""></script>
-  <script src="Leaflet-MiniMap-master/dist/Control.MiniMap.min.js"></script>
-  <script src="layers/barrios.js"></script>
-  <script src="./js/script.js"></script>
-</body>
+    <br />
+    <br />
+    <br />
 
+    <!-- info -->
+
+    <!-- contactos -->
+    <div class="fourth container" id="contacto">
+      <div>
+        <h1 class="text-center">Contactanos</h1>
+        <div class="line">
+          <form action="" id="form">
+            <div class="form-group">
+              <label for="name"></label>
+              <input
+                name="name"
+                required
+                type="text"
+                id="name"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email"></label>
+              <input
+                name="email"
+                type="text"
+                id="email"
+                required
+                placeholder="Email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message"></label>
+              <textarea
+                name="message"
+                class="form-control"
+                rows="4"
+                id="message"
+                placeholder="Su mensaje"
+              ></textarea>
+            </div>
+            <div class="erra">
+              <button type="submit" class="btn">Enviar</button>
+            </div>
+
+            <a href="mailto:nahuelsalinas2086@gmail.com" id="trucazo"></a>
+          </form>
+        </div>
+      </div>
+      <div>
+        <div class="sel">
+          <select name="select-location" id="select-location">
+            <option value="-1">Puntos turisticos</option>
+            <option value="-33.02287906020702, -68.87397289947027">
+              Aladdin Departamentos
+            </option>
+            <option value="-33.023092671206356, -68.87259911165964">
+              Bodega Lagarte
+            </option>
+            <option value="-33.05274913905099, -68.87757794121713">
+              Bodega dante robino
+            </option>
+            <option value="-33.066619150059516, -68.89642608395383">
+              Bodega forja lorca
+            </option>
+            <option value="-33.087863293138504, -68.88760872006074">
+              Bodega norton
+            </option>
+          </select>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+    <!-- fin de contactos -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-1">
+        <p>
+          Desarrollado por
+          <a href="https://www.codehuit.com/" class="a-1">CODE</a>
+          <a href="https://www.codehuit.com/" class="a-2">HUIT</a>
+        </p>
+      </div>
+    </footer>
+    <!-- fin de footer -->
+    <script>
+      const $form = document.querySelector("#form");
+      const $buttonMailto = document.querySelector("#trucazo");
+      $form.addEventListener("submit", handleSubmit);
+      function handleSubmit(event) {
+        event.preventDefault();
+        const form = new FormData(this);
+        /*  console.log(form.get('name')) */
+        $buttonMailto.setAttribute(
+          "href",
+          `mailto:nahuelsalinas2086@gmail.com?subject=${form.get(
+            "name"
+          )}${form.get("email")}&body=${form.get("message")}`
+        );
+        $buttonMailto.click();
+      }
+    </script>
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="Leaflet-MiniMap-master/dist/Control.MiniMap.min.js"></script>
+    <script src="layers/barrios.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
 </html>
