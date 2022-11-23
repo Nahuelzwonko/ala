@@ -55,6 +55,12 @@ a {
   width: 100%;
   height: 100%;
 }
+@media (max-width:467px) {
+  .carousel-inner img {
+    width: 100%;
+    height: 400px;
+  }
+}
 
 .carousel-caption {
   background-color: #c7beb2a6 !important;
@@ -63,15 +69,24 @@ a {
 }
 
 .carousel-control-prev {
-  top: 70% !important;
-  margin-left: 20%;
+  top: 43% !important;
+  margin-left: 35%;
 }
 
 .carousel-control-next {
-  top: 70% !important;
-  margin-right: 20%;
+  top: 43% !important;
+  margin-right: 35%;
 }
-
+@media (max-width: 467px) {
+  .carousel-control-prev {
+    top: 70% !important;
+    margin-left: 35%;
+  }
+  .carousel-control-next {
+    top: 70% !important;
+    margin-right: 35%;
+  }
+}
 textarea {
   width: 100px;
   height: auto;
@@ -109,18 +124,21 @@ textarea {
     position: absolute;
     width: 100px;
     height: 100px;
-    top: 3px;
+    top: 180px;
     left: 200px;
     z-index: 20;
   }
 }
 
 .main a {
-  background-color: #c7beb2 !important;
-  width: 30%;
-  height: 25%;
+  width: 15%;
+  height: 15%;
 }
-
+@media (max-width:467px) {
+  .main a{
+    background-color: #a59f94;
+  }
+}
 .fas {
   color: white !important;
 }
