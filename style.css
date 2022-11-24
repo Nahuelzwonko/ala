@@ -179,29 +179,21 @@ button {
   position: relative;
 }
 
-.fourth {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 2px;
+.cont {
+display: flex;
+justify-content: center;
   width: 100%;
+  height: auto;
 }
-
+.fourth {
+width: 100%;
+}
 @media (max-width:467px) {
-  .fourth {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 2px;
-    width: 100%;
-  }
+
 }
 
 .third .line,
 .fourth .line {
-
   border-left: 3px solid #a59f94;
   margin-left: 0 !important;
 }
@@ -251,8 +243,9 @@ button {
 }
 
 #map {
+
   height: 500px;
-  width: 100%;
+  width: 50%;
 }
 
 .sel {
