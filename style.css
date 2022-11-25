@@ -171,6 +171,11 @@ img {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
+@media (max-width:599px) {
+  .second .car img{
+  width: 0px;
+  }
+}
 
 .text p {
   font-size: 18px;
