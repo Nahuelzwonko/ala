@@ -1,9 +1,11 @@
 body {
-  color: rgb(255, 255, 255) !important;
+  color: #a59f94 !important;
 }
+
 @media (max-width:599px) {
-  body{
+  body {
     background-color: #a59f94 !important;
+    color: white  !important;
   }
 }
 
@@ -109,16 +111,19 @@ textarea {
   color: #fff;
   text-align: center;
 }
+
 .carousel-caption {
   background-color: #c7beb2a6 !important;
   z-index: 11px;
 }
+
 @media (max-width:500px) {
-  .carousel-caption{
+  .carousel-caption {
     width: 100%;
     height: 300px;
   }
 }
+
 .line {
   padding: 4%;
   border-left: 2px solid gray;
@@ -138,7 +143,7 @@ textarea {
     position: absolute;
     width: 200px;
     height: 200px;
-    top:-170px;
+    top: -170px;
     z-index: 20;
   }
 }
@@ -171,9 +176,10 @@ img {
   margin-left: 0px !important;
   margin-right: 0px !important;
 }
+
 @media (max-width:599px) {
-  .second .car img{
-  width: 0px;
+  .second .car img {
+    width: 0px;
   }
 }
 
@@ -228,6 +234,7 @@ button {
     margin-top: 150px;
     margin-left: 23px;
   }
+
   .main h3 {
     font-size: 30px !important;
     line-height: 1 !important;
@@ -258,10 +265,24 @@ button {
   width: 50%;
 }
 
+@media (max-width:599px) {
+  #map {
+    width: 80%;
+    height: 400px;
+  }
+}
+
 .sel {
   display: flex;
   justify-content: center;
   margin-bottom: 19px;
+}
+@media (max-width:599px) {
+  .sel{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 19px;
+  }
 }
 
 select {
@@ -274,7 +295,15 @@ select {
   color: white;
   font-size: 30px;
 }
-
+@media (max-width:599px) {
+  select{
+    text-align: center;
+    width: 80%;
+    height: 50px;
+    background-color: #77746f8c;
+    color: white;
+  }
+}
 .form-group {
   display: flex;
   justify-content: center;
@@ -360,7 +389,7 @@ footer {
   width: 100%;
   background-color: #a59f94;
   color: #fff;
-  
+
 }
 
 .top_header {
