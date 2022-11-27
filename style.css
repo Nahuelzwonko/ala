@@ -5,7 +5,7 @@ body {
 @media (max-width:599px) {
   body {
     background-color: #a59f94 !important;
-    color: white  !important;
+    color: white !important;
   }
 }
 
@@ -255,8 +255,37 @@ button {
   z-index: 100;
 }
 
+.slide-top {
+  -webkit-animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate forwards;
+  animation: slide-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) infinite alternate forwards;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-60px);
+    transform: translateY(-60px);
+  }
+}
+
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+}
+
 .whatsapp-icon {
-  margin-top: 13px;
+  margin-top: 10px;
 }
 
 #map {
@@ -277,8 +306,9 @@ button {
   justify-content: center;
   margin-bottom: 19px;
 }
+
 @media (max-width:599px) {
-  .sel{
+  .sel {
     display: flex;
     justify-content: center;
     margin-bottom: 19px;
@@ -295,8 +325,9 @@ select {
   color: white;
   font-size: 30px;
 }
+
 @media (max-width:599px) {
-  select{
+  select {
     text-align: center;
     width: 80%;
     height: 50px;
@@ -304,6 +335,7 @@ select {
     color: white;
   }
 }
+
 .form-group {
   display: flex;
   justify-content: center;
@@ -320,59 +352,77 @@ select {
 
 }
 
-div.gallery {
-  margin-top: 30px;
+/* galeria */
+.gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 70vh;
 }
 
-div.gallery ul {
-  list-style-type: none;
-  margin-left: 35px;
+.item {
+  flex: 1;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: flex 0.8s ease;
 }
-
-/* animation */
-div.gallery ul li,
-div.gallery li img {
-  -webkit-transition: all 0.1s ease-in-out;
-  -moz-transition: all 0.1s ease-in-out;
-  -o-transition: all 0.1s ease-in-out;
-  transition: all 0.1s ease-in-out;
+.item:hover {
+  flex: 7;
 }
-
-div.gallery ul li {
-  position: relative;
-  float: left;
-  width: 130px;
-  height: 130px;
-  margin: 5px;
-  padding: 5px;
-  z-index: 0;
-}
-
-/* Make sure z-index is higher on hover */
-/* Ensure that hover image overlapped the others */
-div.gallery ul li:hover {
-  z-index: 5;
-}
-
-/* Image is position nicely under li */
-div.gallery ul li img {
+.item p a{
   position: absolute;
-  left: 0;
-  top: 0;
-  /* border: 1px solid #dddddd; */
-  padding: 5px;
-  width: 130px;
-  height: 130px;
-  background: #f0f0f0;
+  margin-top: 180px;
+  font-size: 20px;
+  text-decoration: none;
+}
+.item-1 {
+  background-image: url(./images/png/CAMIONETA.png);
+  opacity: 0.60;
+}
+.item-1:hover{
+opacity: 1;
+}
+.item-2 {
+  background-image: url(./images/png/inicio.png);
+  opacity: 0.60;
+}
+.item-2:hover{
+  opacity: 1;
 }
 
-div.gallery ul li img:hover {
-  width: 200px;
-  height: 200px;
-  margin-top: -130px;
-  margin-left: -130px;
-  top: 65%;
-  left: 65%;
+.item-3 {
+  background-image: url(./images/png/mesa2.png);
+  opacity: 0.60;
+}
+.item-3:hover{
+  opacity: 1;
+}
+
+.item-4 {
+  background-image: url(./images/png/SILLONES.png);
+  opacity: 0.60;
+}
+.item-4:hover{
+  opacity: 1;
+}
+.item-5 {
+  background-image: url(./images/png/Frame4.png);
+  opacity: 0.60;
+}
+.item-5:hover{
+  opacity: 1;
+}
+
+.social {
+  position: absolute;
+  right: 35px;
+  bottom: 0;
+}
+.social img {
+  display: block;
+  width: 32px;
 }
 
 .row-1 {
@@ -481,4 +531,23 @@ footer .bottom_content section {
     margin: 0 5px;
     display: inline-block;
   }
+}
+.hideText {
+  display: none;
+}
+/* accion de leer */
+@media (max-width:599px) {
+  .btnText{
+     color: white !important;
+     background-color: transparent !important;
+  }
+}
+.btnText{
+color: black;
+}
+.showText {
+  display: block;
+}
+.readMore_btn{
+  border: none;
 }
