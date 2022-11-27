@@ -307,7 +307,7 @@ body {
   @media only screen and (max-width:950px) {
     .main {
       flex-direction: column;
-      height:200vh;
+      height:auto;
     }
     .side {
       flex: 1;
@@ -317,7 +317,6 @@ body {
     }
     .slide-nav {
     position: absolute;
-   /*  bottom: Calc(30px - 100vh); */
     right: 50px;
     text-align: center;
     z-index: 12;
