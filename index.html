@@ -113,7 +113,7 @@
     </div>
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
 
-      <h2 class="text-center" id="sobre">Sobre nosotros</h2>
+      <h1 class="text-center" id="sobre">Sobre nosotros</h1>
       <p>
         <i>Somo una familia que comenzo este proyecto con el fin de hacer algo
           que amamos, de brindar alojamiento comodo y seguro, pero mas alla de
@@ -132,13 +132,9 @@
             con cama grande doble y la segunda habitación con dos camas
             individuales (ambas habitaciones cuentan con placard y tienen
             vista a la bodega Lagarde).
-            <span id="hideText" class="hideText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro reprehenderit culpa suscipit sunt
-              temporibus repellendus repudiandae minima ipsum ex, repellat tempora autem cumque adipisci, dicta impedit
-              facilis architecto earum!</span>
+
           </p>
-          <button 
-            class="readMore_btn btnText" id="readMore_btn">Leer mas</button>
+
         </div>
         <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">
           <p>
@@ -204,17 +200,17 @@
   <!-- fin de galeria -->
   <br>
   <br>
-  <br>
-  <br>
-  <br>
-  <br>
+
   <!-- Info -->
+  <h1 class="text-center">Guía turística</h1>
   <div class="third row container">
+    
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      
       <img src="images/png/galeria/gia.jpeg">
     </div>
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      <h1 class="text-center">Guìa turìstica</h1>
+      
       <div class="line">
         <p>Disfruta de nuestra cultura vitivinícola, aprovechando nuestras viñas y conociendo
           hermosas bodegas ubicadas en Mendoza. Con una excelente gastronomía degustando
@@ -223,20 +219,25 @@
           de la comodidad de dormir en un ambiente amplio y tranquilo con la comodidad de
           tener cerca el mundo vitivinícola y muchas más opciones para conocer y compartir con
           amigos o familia.
+          <span id="hideText" class="hideText">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit molestias pariatur corrupti illo
           perspiciatis nobis soluta voluptatum omnis quaerat! Consequatur voluptatibus optio corrupti harum vero
           incidunt id sequi suscipit.
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit eveniet enim sapiente pariatur tempora!
-          Suscipit error, dignissimos ad ex quibusdam nulla soluta magni eius provident debitis veniam consequatur
-          facilis ipsum?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro reprehenderit culpa suscipit sunt
-          temporibus repellendus repudiandae minima ipsum ex, repellat tempora autem cumque adipisci, dicta impedit
-          facilis architecto earum!
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro reprehenderit culpa suscipit sunt
-          temporibus repellendus repudiandae minima ipsum ex, repellat tempora autem cumque adipisci, dicta impedit
-          facilis architecto earum!</p>
+          
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit eveniet enim sapiente pariatur tempora!
+            Suscipit error, dignissimos ad ex quibusdam nulla soluta magni eius provident debitis veniam consequatur
+            facilis ipsum?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro reprehenderit culpa suscipit sunt
+            temporibus repellendus repudiandae minima ipsum ex, repellat tempora autem cumque adipisci, dicta impedit
+            facilis architecto earum!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse porro reprehenderit culpa suscipit sunt
+            temporibus repellendus repudiandae minima ipsum ex, repellat tempora autem cumque adipisci, dicta impedit
+            facilis architecto earum!</span>
+        </p>
+
         <p>Para ello, Aladdin recomienda algunas bodegas para visitar!
         </p>
+        <button class="readMore_btn btnText" id="readMore_btn">Leer mas</button>
       </div>
       <div class="erra">
         <button type="button" class="btn active">Contactanos</button>
@@ -272,24 +273,6 @@
     </div>
 
   </div>
-  <!-- script map -->
-  <script>
-    const $form = document.querySelector("#form");
-    const $buttonMailto = document.querySelector("#trucazo");
-    $form.addEventListener("submit", handleSubmit);
-    function handleSubmit(event) {
-      event.preventDefault();
-      const form = new FormData(this);
-      /*  console.log(form.get('name')) */
-      $buttonMailto.setAttribute(
-        "href",
-        `mailto:nahuelsalinas2086@gmail.com?subject=${form.get(
-          "name"
-        )}${form.get("email")}&body=${form.get("message")}`
-      );
-      $buttonMailto.click();
-    }
-  </script>
   <!-- script leer mas -->
   <script>
     let readMore_btn = document.getElementById('readMore_btn');
