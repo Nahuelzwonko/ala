@@ -396,7 +396,7 @@ select {
 }
 
 .item-1 {
-  background-image: url(./images/png/CAMIONETA.png);
+  background-image: url(./images/ftnB/camioneta.png);
   opacity: 0.60;
 }
 
@@ -405,7 +405,7 @@ select {
 }
 
 .item-2 {
-  background-image: url(./images/png/inicio.png);
+  background-image: url(./images/ftnB/mesa.png);
   opacity: 0.60;
 }
 
@@ -414,7 +414,7 @@ select {
 }
 
 .item-3 {
-  background-image: url(./images/png/mesa2.png);
+  background-image: url(./images/ftnB/porton.png);
   opacity: 0.60;
 }
 
@@ -423,7 +423,7 @@ select {
 }
 
 .item-4 {
-  background-image: url(./images/png/SILLONES.png);
+  background-image: url(./images/ftnB/sillon.png);
   opacity: 0.60;
 }
 
@@ -432,7 +432,7 @@ select {
 }
 
 .item-5 {
-  background-image: url(./images/png/Frame4.png);
+  background-image: url(./images/ftnB/tv.png);
   opacity: 0.60;
 }
 
