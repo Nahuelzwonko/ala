@@ -21,9 +21,8 @@
 </head>
 
 <body>
-  <a style="z-index: 23 !important; background-color: transparent"
-  href="https://icons8.com/icon/16713/whatsapp" class="whatsapp slide-top"
-    target="_blank">
+  <a style="z-index: 23 !important; background-color: transparent" href="https://icons8.com/icon/16713/whatsapp"
+    class="whatsapp slide-top" target="_blank">
     <i class=""><img src="https://img.icons8.com/color/48/null/whatsapp--v1.png" /></i></a>
   <!-- navegador -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top ">
@@ -34,6 +33,7 @@
     <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample10">
       <ul class="navbar-nav">
         <li class="nav-item active">
+
           <a class="nav-link">Departamentos Aladdin</a>
         </li>
         <li class="nav-item">
@@ -112,8 +112,9 @@
       <img src="images/png/Frame4.png" />
     </div>
     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-
+      <hr>
       <h1 class="text-center" id="sobre">Sobre nosotros</h1>
+      <hr>
       <p>
         <i>Somo una familia que comenzo este proyecto con el fin de hacer algo
           que amamos, de brindar alojamiento comodo y seguro, pero mas alla de
@@ -163,7 +164,9 @@
   <div class="text container" id="galeria">
     <div class=" text-center" style="justify-content: space-around">
       <div class="">
+        <hr>
         <h3>Galeria</h3>
+        <hr>
         <p>
           <i>Somo una familia que comenzo este proyecto con el fin de hacer algo
             que amamos, de brindar alojamiento comodo y seguro, pero mas alla de
@@ -202,15 +205,17 @@
   <br>
 
   <!-- Info -->
+  <hr>
   <h1 class="text-center">Guía turística</h1>
+  <hr>
   <div class="third row container">
-    
+
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      
+
       <img src="images/png/galeria/gia.jpeg">
     </div>
     <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-      
+
       <div class="line">
         <p>Disfruta de nuestra cultura vitivinícola, aprovechando nuestras viñas y conociendo
           hermosas bodegas ubicadas en Mendoza. Con una excelente gastronomía degustando
@@ -220,10 +225,10 @@
           tener cerca el mundo vitivinícola y muchas más opciones para conocer y compartir con
           amigos o familia.
           <span id="hideText" class="hideText">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit molestias pariatur corrupti illo
-          perspiciatis nobis soluta voluptatum omnis quaerat! Consequatur voluptatibus optio corrupti harum vero
-          incidunt id sequi suscipit.
-          
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur odit molestias pariatur corrupti illo
+            perspiciatis nobis soluta voluptatum omnis quaerat! Consequatur voluptatibus optio corrupti harum vero
+            incidunt id sequi suscipit.
+
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit eveniet enim sapiente pariatur tempora!
             Suscipit error, dignissimos ad ex quibusdam nulla soluta magni eius provident debitis veniam consequatur
             facilis ipsum?
@@ -239,7 +244,7 @@
         </p>
         <button class="readMore_btn btnText" id="readMore_btn">Leer mas</button>
       </div>
-<!--       <div class="erra">
+      <!--       <div class="erra">
         <button type="button" class="btn active">Contactanos</button>
       </div> -->
     </div>
@@ -247,7 +252,9 @@
   <br>
   <br>
   <div>
+    <hr>
     <h1 class="text-center">Puntos turisticos</h1>
+    <hr>
     <div class="sel">
       <select name="select-location" id="select-location">
         <option value="-1">Puntos turisticos</option><!-- poner puntos claves para aladdin -->
@@ -271,7 +278,23 @@
     <div class="sel">
       <div id="map"></div>
     </div>
+  </div>
+  <!-- modal -->
+  <div class="modal modal-tour position-static d-block py-5" tabindex="-1" role="dialog" id="modalTour">
+    <hr>
+    <h1 class="text-center">Contacto</h1>
+    <hr>
+    <div class="modal-dialog" style="background-color:transparent;">
+      <div class="modal-content border border-0 text-center">
 
+        <button style="background-color: #a59f9488; color: white;" class="btn border-dark " type="button">Email</button>
+        <button style="background-color: #a59f9488; color: white;" class="btn border-dark mt-4"
+          type="button">Telefonos</button>
+        <button style="background-color: #a59f9488; color: white;" class="btn border-dark mt-4"
+          type="button">Whatsapp</button>
+
+      </div>
+    </div>
   </div>
   <!-- script leer mas -->
   <script>

@@ -1,37 +1,45 @@
 /* funte */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
 /* globales */
 body {
   color: #a59f94 !important;
   font-family: 'Poppins', sans-serif !important;
 }
+
 a {
   color: white !important;
   font-size: 16px;
 }
+
 /* responsive de body */
 @media (max-width:599px) {
   body {
-    background-color: #a59f94 !important;
+    background-color: #a59f94c5 !important;
     color: white !important;
   }
 }
+
 /*  */
 .social li {
   display: inline;
   padding-left: 5% !important;
 }
+
 .header {
   width: 90% !important;
   margin-left: 5% !important;
 }
+
 .header h1 {
   font-size: 25px;
   padding-top: 5%;
 }
+
 .navbar {
   background-color: #a59f94;
 }
+
 .social {
   padding-top: 5%;
 }
@@ -210,10 +218,11 @@ button {
 .fourth {
   width: 100%;
 }
+
 @media (max-width:599px) {
-  .third img{
-display: flex;
-margin-left: 3%;
+  .third img {
+    display: flex;
+    margin-left: 3%;
   }
 }
 
@@ -316,13 +325,13 @@ margin-left: 3%;
 
 select {
   text-align: center;
-  width: 170px;
-  height: 30px;
+  width: 50%;
+  height: 50px;
   border-radius: 7px;
   background-color: #a59f94;
-  border: none;
+  border: none !important;
   color: white;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 @media (max-width:599px) {
@@ -378,6 +387,7 @@ select {
   font-size: 20px;
   text-decoration: none;
 }
+
 @media (max-width:599px) {
   .item p a {
     position: inherit;
@@ -561,6 +571,7 @@ footer .bottom_content section {
 
   }
 }
+
 .btnText {
   color: black;
 }
@@ -571,3 +582,23 @@ footer .bottom_content section {
 }
 
 /* one pag gallery */
+hr {
+  display: flex;
+  justify-content: center;
+  width: 30%;
+  background-color: transparent !important;
+  border-width: 2px !important;
+  border-style: solid !important;
+  border-image: linear-gradient(to right,rgb(255, 255, 255), rgba(29, 29, 29, 0.466), rgb(255, 255, 255))2 !important;  
+}
+@media (max-width:599px) {
+  hr{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: transparent !important;
+    border-width: 2px !important;
+    border-style: solid !important;
+    border-image: linear-gradient(to right,rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.479), rgba(255, 255, 255, 0))2 !important;  
+  }
+}
