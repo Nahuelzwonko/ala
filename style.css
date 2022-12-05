@@ -3,7 +3,7 @@
 
 /* globales */
 body {
-  color: #a59f94 !important;
+  color: #000000 !important;
   font-family: 'Poppins', sans-serif !important;
 }
 
@@ -49,15 +49,26 @@ a {
 }
 
 .carousel-inner h3 {
+  font-size: 40px;
   color: white;
   font-family: 'Poppins', sans-serif;
+  /* margin-bottom: 30px; */
 
 }
 
 .carousel-inner p {
+  font-size: 20px;
   color: white;
   font-family: 'Poppins', sans-serif;
-
+}
+@media (max-width:467px) {
+  .carousel-inner h3 {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+  .carousel-inner p{
+  font-size: 15px;  
+  }
 }
 
 .carousel-inner img {
@@ -71,9 +82,6 @@ a {
     height: 500px;
   }
 }
-
-
-
 .carousel-control-prev {
   top: 43% !important;
   margin-left: 35%;
