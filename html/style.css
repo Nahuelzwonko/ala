@@ -328,35 +328,18 @@ body {
     }
 }
 
-.title {
+.title{
     display: flex;
     justify-content: center;
     position: absolute;
+    top: 40px;
+    left: 5px;
 }
-
-.title h1 {
-    position: relative;
+.title h1{
     color: white;
-    font-size: 50px;
-    top: 10px;
-    left: 50%;
+    font-weight: 800;
 }
-@media (max-width:467px) {
-    .title h1{
-        position: relative;
-        color: white;
-        left: 35%;
-    }
-}
-
-.title p {
+.title p{
     color: white;
-    top: 100px;
-    position: relative;
-    text-align: center;
-}
-@media (max-width:467px) {
-    .title p{
-        left: -70px;
-    }
+    font-weight: 400;
 }
