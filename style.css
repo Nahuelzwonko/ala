@@ -414,7 +414,7 @@ select {
 }
 
 .item-1 {
-  background-image: url(./images/fotos-aladdin/Frame\ 5.png);
+  background-image: url(./images/galeria1/porton.png);
   opacity: 0.60;
 }
 
@@ -423,7 +423,7 @@ select {
 }
 
 .item-2 {
-  background-image: url(./images/ftnB/mesa.png);
+  background-image: url(./images/galeria1/tv.png);
   opacity: 0.60;
 }
 
@@ -432,7 +432,7 @@ select {
 }
 
 .item-3 {
-  background-image: url(./images/fotos-aladdin/Frame\ 6.png);
+  background-image: url(./images/galeria1/cuarto.png);
   opacity: 0.60;
 }
 
@@ -441,7 +441,7 @@ select {
 }
 
 .item-4 {
-  background-image: url(./images/ftnB/sillon.png);
+  background-image: url(./images/galeria1/bañ.png);
   opacity: 0.60;
 }
 
@@ -450,7 +450,7 @@ select {
 }
 
 .item-5 {
-  background-image: url(./images/ftnB/tv.png);
+  background-image: url(./images/galeria1/sillon.png);
   opacity: 0.60;
 }
 
