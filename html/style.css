@@ -332,8 +332,7 @@ body {
   display: flex;
   justify-content: center;
   position: absolute;
-  top: 40px;
-  left: 5px;
+  top: 55px;
   background-color: #a59f9469;
   border-radius: 8px;
 }
