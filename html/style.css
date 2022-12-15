@@ -334,12 +334,16 @@ body {
   position: absolute;
   top: 40px;
   left: 5px;
+  background-color: #a59f9469;
+  border-radius: 8px;
 }
+
 .title h1 {
   color: white;
   font-weight: 800;
   font-family: Georgia, "Times New Roman", Times, serif;
 }
+
 .title p {
   color: white;
   font-weight: 400;
