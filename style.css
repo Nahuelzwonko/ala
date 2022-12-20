@@ -446,7 +446,7 @@ select {
 }
 
 .item-1 {
-  background-image: url(./images/galeria1/porton.png);
+  background-image: url(./images/principales/porton.png);
   opacity: 0.60;
 }
 .item-1:hover {
@@ -454,7 +454,7 @@ select {
 }
 
 .item-2 {
-  background-image: url(./images/galeria1/tv.png);
+  background-image: url(./images/principales/tv.png);
   opacity: 0.60;
 }
 
@@ -462,32 +462,7 @@ select {
   opacity: 1;
 }
 
-.item-3 {
-  background-image: url(./images/galeria1/cuarto.png);
-  opacity: 0.60;
-}
 
-.item-3:hover {
-  opacity: 1;
-}
-
-.item-4 {
-  background-image: url(./images/galeria1/bañ.png);
-  opacity: 0.60;
-}
-
-.item-4:hover {
-  opacity: 1;
-}
-
-.item-5 {
-  background-image: url(./images/galeria1/sillon.png);
-  opacity: 0.60;
-}
-
-.item-5:hover {
-  opacity: 1;
-}
 
 .social {
   position: absolute;
