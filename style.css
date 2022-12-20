@@ -189,6 +189,15 @@ font-size: 60px;
   width: 200px;
   height: 200px;
 }
+@media (max-width:567px) {
+  .line-1 img{
+    position: absolute;
+    left: 35%;
+    top: -80px;
+    width: 100px;
+    height: 100px;
+  }
+}
 
 @media (max-width:467px) {
   .line img {
@@ -436,6 +445,7 @@ select {
   margin-top: 180px;
   font-size: 20px;
   text-decoration: none;
+  color: black !important;
 }
 
 @media (max-width:599px) {
